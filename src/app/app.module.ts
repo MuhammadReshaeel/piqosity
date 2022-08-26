@@ -1,10 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DatePickerComponent } from './date-picker/date-picker.component';
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { TimePickerComponent } from './time-picker/time-picker.component'
@@ -18,6 +16,17 @@ import { DropdownsComponent } from './dropdowns/dropdowns.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { ModalComponent } from './modal/modal.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { TooltipComponent } from './tooltip/tooltip.component';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { PaginationComponent } from './pagination/pagination.component';
+import { PaginationModule } from 'ngx-bootstrap/pagination';
+import { NgxNavbarModule } from 'ngx-bootstrap-navbar';
+import { NavbarComponent } from './navbar/navbar.component';
+import { LoaderComponent } from './loader/loader.component';
+import { CarousalComponent } from './carousal/carousal.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { SlickCarousalComponent } from './slick-carousal/slick-carousal.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [
@@ -28,7 +37,14 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     AlertsComponent,
     ButtonsComponent,
     DropdownsComponent,
-    ModalComponent
+    ModalComponent,
+    TooltipComponent,
+    PaginationComponent,
+    NavbarComponent,
+    LoaderComponent,
+    CarousalComponent,
+    SlickCarousalComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -39,8 +55,12 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     TabsModule.forRoot(),
     AlertModule.forRoot(),
     BsDropdownModule.forRoot(),
-    ModalModule.forRoot()
-
+    ModalModule.forRoot(),
+    TooltipModule.forRoot(),
+    PaginationModule.forRoot(),
+    NgxNavbarModule,
+    CarouselModule.forRoot(),
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
